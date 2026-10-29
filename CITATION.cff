@@ -10,12 +10,12 @@ authors:
   - given-names: Xiangzhen
     family-names: Kong
     email: x.kong@tue.nl
-    affiliation: Eindhoven University of Technology
+    affiliation: KU Leuven; Eindhoven University of Technology
     orcid: 'https://orcid.org/0000-0003-3454-7576'
   - given-names: Ching-Wei
     family-names: Lin
     email: jingwei.edu@gmail.com
-    affiliation: KU Leuven
+    affiliation: KU Leuven; TP Vision
   - given-names: Peter
     family-names: Hanselaer
     affiliation: KU Leuven
@@ -41,7 +41,9 @@ keywords:
   - Spectral radiance calibration
   - Specim IQ
   - Lighting appearance model
-license: MIT
+license:
+  - MIT
+  - CC-BY-4.0
 version: '1.0.0'
 date-released: '2026-10-29'
 preferred-citation:
@@ -57,5 +59,6 @@ preferred-citation:
   journal: Color Research & Application
   volume: 51
   issue: 2
+  start: e70043
   year: 2026
   doi: 10.1002/col.70043

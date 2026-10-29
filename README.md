@@ -4,7 +4,7 @@
 
 This repository provides the source code and data needed to reproduce the data figures (Figures 2–11, 14 and 15) and Tables 1–3 of our publication:
 
-> Xiangzhen Kong, Ching-Wei Lin, & Peter Hanselaer. (2026). *Measuring Absolute Radiance by Calibrating a Hyperspectral Camera Economically*. Color Research & Application, 51(2). DOI: [10.1002/col.70043](https://doi.org/10.1002/col.70043).
+> Kong, X., Lin, C.-W., & Hanselaer, P. (2026). *Measuring Absolute Radiance by Calibrating a Hyperspectral Camera Economically*. Color Research & Application, 51(2), e70043. DOI: [10.1002/col.70043](https://doi.org/10.1002/col.70043).
 
 The paper characterises and calibrates a commercial hyperspectral camera (Specim IQ) for absolute spectral radiance measurements, using a factory-calibrated spectroradiometer (JETI Specbos 1211L), a helium lamp and a stable broadband calibration source. The calibration is validated with an OLED panel and a Macbeth ColorChecker.
 
@@ -221,14 +221,14 @@ Because of the long time span and the several revisions, a few small discrepanci
 If you use the code or data from this repository, please cite both the associated publication and this dataset.
 
 **1. Citing the Paper:**
-> Xiangzhen Kong, Ching-Wei Lin, & Peter Hanselaer. (2026). *Measuring Absolute Radiance by Calibrating a Hyperspectral Camera Economically*. Color Research & Application, 51(2). DOI: [10.1002/col.70043](https://doi.org/10.1002/col.70043).
+> Kong, X., Lin, C.-W., & Hanselaer, P. (2026). *Measuring Absolute Radiance by Calibrating a Hyperspectral Camera Economically*. Color Research & Application, 51(2), e70043. DOI: [10.1002/col.70043](https://doi.org/10.1002/col.70043).
 
-**2. Citing the Software/Dataset:**
-> Xiangzhen Kong, Ching-Wei Lin, & Peter Hanselaer. (2026). *Measuring Absolute Radiance by Calibrating a Hyperspectral Camera Economically: Code and Data* (Version 1.0.0) [Dataset and computer software]. Zenodo. [https://doi.org/10.5281/zenodo.13136174](https://doi.org/10.5281/zenodo.13136174).
+**2. Citing the Dataset:**
+> Kong, X., Lin, C.-W., & Hanselaer, P. (2026). *Measuring Absolute Radiance by Calibrating a Hyperspectral Camera Economically: Code and Data* (Version 1.0.0) [Dataset]. Zenodo. [https://doi.org/10.5281/zenodo.13136174](https://doi.org/10.5281/zenodo.13136174).
 
 **BibTeX Entry:**
 ```bibtex
-@software{kong_2026_specimIqCalibration,
+@dataset{kong_2026_specimIqCalibration,
   author    = {Kong, Xiangzhen and Lin, Ching-Wei and Hanselaer, Peter},
   title     = {{Measuring Absolute Radiance by Calibrating a Hyperspectral Camera Economically: Code and Data}},
   year      = {2026},
@@ -265,7 +265,7 @@ This project consists of different components, which are covered by different li
 All source code in this repository (all `.m` files) is licensed under the **[MIT License](https://opensource.org/license/mit)**. Please see the `LICENSE` file for the full text.
 
 ### Data and Documentation (CC BY 4.0 License)
-The text of this `README.md` file, all figures generated in the `/output` directory, and all raw and processed data (in `/data/rawData`, `/data/processedData` and the hyperspectral images on Zenodo) are licensed under the **[Creative Commons Attribution license (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)**, in accordance with the open-access policy of the original publication.
+The text of this `README.md` file and all raw and processed data (in `/data/rawData`, `/data/processedData` and the hyperspectral images on Zenodo) are licensed under the **[Creative Commons Attribution license (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)**. This license applies to the files of this repository only; the published article is © 2026 Wiley Periodicals LLC.
 
 ### Third-Party Data
 The CIE 1931 2° colour-matching functions in `/data/externalData` are published by the International Commission on Illumination (CIE): *CIE 1931 colour-matching functions, 2 degree observer*, DOI: [10.25039/CIE.DS.xvudnb9b](https://doi.org/10.25039/CIE.DS.xvudnb9b). They are included here for reproducibility, under the license of the CIE.
