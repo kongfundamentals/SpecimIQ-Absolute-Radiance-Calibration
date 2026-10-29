@@ -29,7 +29,7 @@ The processed data are included in `/data/processedData`, so this works directly
 
 To reproduce everything from the raw hyperspectral images:
 1. Download both files from Zenodo ([https://doi.org/10.5281/zenodo.13136174](https://doi.org/10.5281/zenodo.13136174)): `SpecimIQ-Absolute-Radiance-Calibration-1.0.0-code.zip` (this repository) and `SpecimIQ-Absolute-Radiance-Calibration-1.0.0-rawData.zip` (the raw hyperspectral images, 1.4 GB; 9.9 GB unzipped).
-2. Unzip both files in the same folder. The raw images are then placed automatically in `SpecimIQ-Absolute-Radiance-Calibration-1.0.0/data/rawData/hyperspectralImages`, so that, for example, the file `data/rawData/hyperspectralImages/repeatability/313/capture/313.raw` exists. (If you cloned the repository from GitHub instead, move the eight topic folders from the unzipped `data/rawData/hyperspectralImages` into the same folder of your clone.)
+2. Unzip the code. Then unzip the raw data and move the eight topic folders it contains (`repeatability`, `linearity`, …) into `data/rawData/hyperspectralImages` of the code folder, so that, for example, the file `data/rawData/hyperspectralImages/repeatability/313/capture/313.raw` exists.
 3. Run (about 10–15 minutes):
 ```matlab
 runAllAnalyses         % raw hyperspectral images -> /data/processedData
@@ -102,7 +102,7 @@ Figures 1, 12 and 13 are not data figures (an illustration adapted from the lite
 
 ### Raw hyperspectral images (`/data/rawData/hyperspectralImages`)
 
-The raw Specim IQ captures are **not stored on GitHub** because of their size. They are in the file `SpecimIQ-Absolute-Radiance-Calibration-1.0.0-rawData.zip` on Zenodo (see [Quick Start](#quick-start)), which contains one folder per topic below. Every capture keeps the original folder structure of the camera:
+The raw Specim IQ captures are **not stored on GitHub** because of their size. They are in the file `SpecimIQ-Absolute-Radiance-Calibration-1.0.0-rawData.zip` on Zenodo (see [Quick Start](#quick-start)), which contains one folder per topic below. Move these eight folders into this folder. Every capture keeps the original folder structure of the camera:
 
 ```
 <topic>/<captureNumber>/
