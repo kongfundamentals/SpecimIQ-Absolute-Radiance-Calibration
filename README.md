@@ -28,8 +28,8 @@ verifyReproduction     % checks the results and writes /output/verificationLog.t
 The processed data are included in `/data/processedData`, so this works directly after downloading the repository. A single figure or table can be made with, for example, `addpath(genpath('src')); plotFigure11`.
 
 To reproduce everything from the raw hyperspectral images:
-1. Download the raw hyperspectral images (about 9.4 GB, one zip file per experiment) from Zenodo: [https://doi.org/10.5281/zenodo.13136174](https://doi.org/10.5281/zenodo.13136174).
-2. Unzip them into `/data/rawData/hyperspectralImages`, so that, for example, the file `/data/rawData/hyperspectralImages/repeatability/313/capture/313.raw` exists.
+1. Download both files from Zenodo ([https://doi.org/10.5281/zenodo.13136174](https://doi.org/10.5281/zenodo.13136174)): `SpecimIQ-Absolute-Radiance-Calibration-1.0.0-code.zip` (this repository) and `SpecimIQ-Absolute-Radiance-Calibration-1.0.0-rawData.zip` (the raw hyperspectral images, 1.4 GB; 9.9 GB unzipped).
+2. Unzip both files in the same folder. The raw images are then placed automatically in `SpecimIQ-Absolute-Radiance-Calibration-1.0.0/data/rawData/hyperspectralImages`, so that, for example, the file `data/rawData/hyperspectralImages/repeatability/313/capture/313.raw` exists. (If you cloned the repository from GitHub instead, move the eight topic folders from the unzipped `data/rawData/hyperspectralImages` into the same folder of your clone.)
 3. Run (about 10–15 minutes):
 ```matlab
 runAllAnalyses         % raw hyperspectral images -> /data/processedData
@@ -102,7 +102,7 @@ Figures 1, 12 and 13 are not data figures (an illustration adapted from the lite
 
 ### Raw hyperspectral images (`/data/rawData/hyperspectralImages`)
 
-The raw Specim IQ captures are **not stored on GitHub** because of their size. Download them from Zenodo (one zip file per folder below) and unzip them into this folder. Every capture keeps the original folder structure of the camera:
+The raw Specim IQ captures are **not stored on GitHub** because of their size. They are in the file `SpecimIQ-Absolute-Radiance-Calibration-1.0.0-rawData.zip` on Zenodo (see [Quick Start](#quick-start)), which contains one folder per topic below. Every capture keeps the original folder structure of the camera:
 
 ```
 <topic>/<captureNumber>/
