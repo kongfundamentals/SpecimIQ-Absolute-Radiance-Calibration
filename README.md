@@ -8,7 +8,15 @@ This repository provides the source code and data needed to reproduce the data f
 
 The paper characterises and calibrates a commercial hyperspectral camera (Specim IQ) for absolute spectral radiance measurements, using a factory-calibrated spectroradiometer (JETI Specbos 1211L), a helium lamp and a stable broadband calibration source. The calibration is validated with an OLED panel and a Macbeth ColorChecker.
 
-This README is the only documentation file of the repository; every folder is described below.
+This README is the only documentation file of the repository. Contents:
+
+1. [Quick Start](#quick-start) – run the code
+2. [System Requirements](#system-requirements)
+3. [Repository Structure](#repository-structure) – folders, and which script makes which figure
+4. [Data](#data) – description of every data folder
+5. [Conventions Used in the Code](#conventions-used-in-the-code)
+6. [Reproducibility Notes](#reproducibility-notes) – comparison with the published article
+7. [How to Cite](#how-to-cite), [Contributions](#contributions), [Statement on the Use of AI Tools](#statement-on-the-use-of-ai-tools), [License](#license)
 
 ## Quick Start
 
@@ -124,12 +132,17 @@ The capture numbers are the numbers assigned by the camera, which numbers its ca
 
 Spectral radiance in W/(m² sr nm), measured with a factory-calibrated JETI Specbos 1211L spectroradiometer. These data are the ground truth of the paper. The files with a metadata header are exports of the JETI LiVal software (measurement settings and photometric values such as Lv and CIE 1931 x, y, followed by the spectral data).
 
-| File | Original file name | Content |
-|---|---|---|
-| `radianceCalibration_jeti.csv` | `RadianceStandard20210907_beforeAndAfterSpecIMIQ.csv` | 30 measurements of the calibration source (350–1000 nm, 1 nm steps). #1–#10: perpendicular, before the Specim IQ captures; #11–#20: from a small angle (< 5°); #21–#30: perpendicular, after the Specim IQ captures. Measurements #21–#30 are averaged for the calibration (Fig. 10). |
-| `oledValidation_jeti.csv` | `350_1000JETI.csv` | 145 measurements (380–780 nm, 1 nm steps): 29 targets x 5 repeats. Targets 1–24: ColorChecker patches; targets 25–29: OLED spots top-left, top-right, centre, bottom-left, bottom-right (Section 4.1). |
-| `colorCheckerValidation_calibrationSource_jeti.csv` | `CalLamp_NoFliter_sameTime_As3ms_2023-08-08-16-58-01.csv` | Calibration source at 1.0 m, measured at the same time as Specim IQ capture 809. Row 1: wavelength (nm); row 2: spectral radiance. |
-| `colorCheckerValidation_patches_jetiAverage.csv` | `JetiAvg_MCC.csv` | Mean of five measurements at the centre of each of the 24 ColorChecker patches. Row 1: wavelength (nm); rows 2–25: patches 1–24. |
+* **`radianceCalibration_jeti.csv`** (original name: `RadianceStandard20210907_beforeAndAfterSpecIMIQ.csv`)<br>
+  30 measurements of the calibration source, 350–1000 nm in 1 nm steps:
+    * #1–#10: perpendicular, before the Specim IQ captures,
+    * #11–#20: from a small angle (< 5°),
+    * #21–#30: perpendicular, after the Specim IQ captures. These are averaged for the calibration (Fig. 10).
+* **`oledValidation_jeti.csv`** (original name: `350_1000JETI.csv`)<br>
+  145 measurements, 380–780 nm in 1 nm steps: 29 targets x 5 repeats. Targets 1–24: ColorChecker patches; targets 25–29: OLED spots top-left, top-right, centre, bottom-left, bottom-right (Section 4.1).
+* **`colorCheckerValidation_calibrationSource_jeti.csv`** (original name: `CalLamp_NoFliter_sameTime_As3ms_2023-08-08-16-58-01.csv`)<br>
+  Calibration source at 1.0 m, measured at the same time as Specim IQ capture 809. Row 1: wavelength (nm); row 2: spectral radiance.
+* **`colorCheckerValidation_patches_jetiAverage.csv`** (original name: `JetiAvg_MCC.csv`)<br>
+  Mean of five measurements at the centre of each of the 24 ColorChecker patches. Row 1: wavelength (nm); rows 2–25: patches 1–24.
 
 ### Colour camera data (`/data/rawData/colorCamera`)
 
