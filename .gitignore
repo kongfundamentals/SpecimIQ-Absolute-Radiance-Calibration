@@ -3,7 +3,7 @@ data/rawData/hyperspectralImages/*
 !data/rawData/hyperspectralImages/.gitkeep
 
 # Generated outputs (created by runAllFigures and verifyReproduction)
-output/
+/output/
 
 # MATLAB temporary and generated files
 *.asv
