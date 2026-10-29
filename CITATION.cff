@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+title: >-
+  Measuring Absolute Radiance by Calibrating a Hyperspectral
+  Camera Economically: Code and Data
+message: >-
+  If you use this software or data, please cite it using the
+  metadata from this file, together with the associated publication.
+type: dataset
+authors:
+  - given-names: Xiangzhen
+    family-names: Kong
+    email: x.kong@tue.nl
+    affiliation: Eindhoven University of Technology
+    orcid: 'https://orcid.org/0000-0003-3454-7576'
+  - given-names: Ching-Wei
+    family-names: Lin
+    email: jingwei.edu@gmail.com
+    affiliation: KU Leuven
+  - given-names: Peter
+    family-names: Hanselaer
+    affiliation: KU Leuven
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.13136174
+    description: Zenodo record of the code and data
+repository-code: 'https://github.com/kongfundamentals/SpecimIQ-Absolute-Radiance-Calibration'
+abstract: >-
+  Code and data to reproduce the figures and tables of the paper
+  "Measuring Absolute Radiance by Calibrating a Hyperspectral Camera
+  Economically". A commercial hyperspectral camera (Specim IQ) is
+  characterised (repeatability, linearity, dark current, spatial
+  uniformity, wavelength calibration) and calibrated for absolute
+  spectral radiance with a factory-calibrated spectroradiometer.
+  The calibration is validated with an OLED panel and a Macbeth
+  ColorChecker. The package contains the raw hyperspectral images,
+  the spectroradiometer and colour camera data, and MATLAB code.
+keywords:
+  - Hyperspectral imaging
+  - Absolute spectral radiance
+  - Camera calibration
+  - Spectral radiance calibration
+  - Specim IQ
+  - Lighting appearance model
+license: MIT
+version: '1.0.0'
+date-released: '2026-10-29'
+preferred-citation:
+  type: article
+  title: Measuring Absolute Radiance by Calibrating a Hyperspectral Camera Economically
+  authors:
+    - given-names: Xiangzhen
+      family-names: Kong
+    - given-names: Ching-Wei
+      family-names: Lin
+    - given-names: Peter
+      family-names: Hanselaer
+  journal: Color Research & Application
+  volume: 51
+  issue: 2
+  year: 2026
+  doi: 10.1002/col.70043

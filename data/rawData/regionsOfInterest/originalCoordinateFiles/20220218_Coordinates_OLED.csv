@@ -1,0 +1,7 @@
+version,center_x,center_y,size_x,size_y,pitch_x,pitch_y,shift_x_per_yPitch,shift_y_per_xPitch,targetTL_x,targetTL_y,targetTR_x,targetTR_y,targetBL_x,targetBL_y,targetBR_x,targetBR_y,range_x_min,range_y_min,range_x_max,range_y_max
+v00,296,266,59,59,22,22,0,0,,,,,,,,,,,,
+v01,296,266,59,59,44,44,0,0,,,,,,,,,,,,
+v02,296,266,55,55,40,40,1,-1,,,,,,,,,,,,
+v03,295,265,53,53,40,40,1,-1,,,,,,,,,,,,
+v04,295,265,53,53,38,38,1,-1,,,,,,,,,,,,
+v05,295,265,53,53,39,39,1,-1,,,,,,,,,,,,

@@ -1,0 +1,3 @@
+version,center_x,center_y,range_x_min,range_y_min,range_x_max,range_y_max,picked_x_min,picked_y_min,picked_x_max,picked_y_max,jeti_diameter_x,jeti_diameter_y,area_circle,squre_min,square,area_square,jeti_x_min,jeti_y_min,jeti_x_max,jeti_y_max,reason,picked_x_cent,picked_y_cent
+v00,254,257,210,220,290,300,247,250,260,263,16,16,201.0619298,11.3137085,14,196,247,250,260,263,,253.5,256.5
+v01,254,257,210,220,290,300,248,251,260,263,14.5,14.5,165.1299639,10.25304833,13,169,248,251,260,263,follow jeti_v02 (screenshot 2023-09-11 17),254,257

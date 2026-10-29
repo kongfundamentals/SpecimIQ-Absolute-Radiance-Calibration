@@ -1,0 +1,14 @@
+# Raw hyperspectral images: too large for GitHub, available on Zenodo
+data/rawData/hyperspectralImages/*
+!data/rawData/hyperspectralImages/.gitkeep
+
+# Generated outputs (created by runAllFigures and verifyReproduction)
+output/
+
+# MATLAB temporary and generated files
+*.asv
+*.autosave
+*.mex*
+*~
+.DS_Store
+Thumbs.db
